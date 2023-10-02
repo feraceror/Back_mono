@@ -46,7 +46,8 @@ app.post('/webhook', (req, res) => {
     const headerTimestamp = headerSignature[0].split('=')[1];
     const headerHmac = headerSignature[1].split('=')[1];
 
-
+    console.log(JSON.stringfy(req.headers['mono-signature']));
+   
     const signedPayload = `${headerTimestamp}.${JSON.stringify(req.body)}`;
 
     const hmac = crypto
@@ -62,7 +63,7 @@ app.post('/webhook', (req, res) => {
       // Calcular la diferencia de tiempo en milisegundos
       const diferenciaEnSegundos = now - headerTimestamp;
       const diferenciaEnMinutos = diferenciaEnSegundos / 60;
-      console.log(diferenciaEnMinutos);
+      
 
       if(diferenciaEnMinutos <= config.maxTimeMin) {
         console.log(req.body);
