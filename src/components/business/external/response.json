@@ -1,0 +1,378 @@
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'application/json',
+    'content-length': '18',
+    connection: 'close',
+    date: 'Fri, 09 Jun 2023 18:04:24 GMT',
+    'x-amzn-requestid': '4e7917bc-6b27-45d0-acf4-116e7b1f05d6',
+    'x-amz-apigw-id': 'GQ1yWEnRIAMF1lA=',
+    'x-amzn-trace-id': 'Root=1-648369a8-0a09ffa3256a01e23c2daab6',
+    'x-cache': 'Miss from cloudfront',
+    via: '1.1 31847af2bdf6b34a1bb209d60de0f25e.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'BOG50-P2',
+    'x-amz-cf-id': 'Qh_7LcXahYdYyqJA33x7nztb2VRJwUQNkOPah1WVrJFtmDQ9TNLC2A=='
+  },
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function] },
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'X-Kushki-Id': 1686326662741,
+      'X-Kushki-Key': '20000000103151137000',
+      'X-Kushki-Signature': '152e4fb5f11c4825ff56fe94308220af905e781bc5e2545e2a4e3f0e6144a5b6',
+      'X-Kushki-SimpleSignature': '4bde549aae47ba94af3290649e41de901447f2d85d8b1664184c2360e999d379',
+      'X-App-Id': '63bf35e90d09d9001eb6633c',
+      'User-Agent': 'axios/0.27.2',
+      'Content-Length': 4767
+    },
+    method: 'post',
+    url: 'https://bm5ydtq6b1.execute-api.us-east-1.amazonaws.com/production',
+    data: '{\n' +
+      '            "country": "Peru",\n' +
+      '            "metadata": {\n' +
+      '                "contractID": "157AB"\n' +
+      '            },\n' +
+      '            "secure_message": "R_DEC_COU",\n' +
+      '            "rules": [\n' +
+      '                {\n' +
+      '                    "code": "K322",\n' +
+      '                    "message": "R_DEC_COU"\n' +
+      '                }\n' +
+      '            ],\n' +
+      '            "public_credential_id": "00293b0594b24620ae9138e104026bb5",\n' +
+      '            "transaction_details": {\n' +
+      '                "lastFourDigitsOfCard": "4975",\n' +
+      '                "cardType": "Visa",\n' +
+      '                "binCard": "491626",\n' +
+      '                "isDeferred": "N"\n' +
+      '            },\n' +
+      '            "mccCode": "4899",\n' +
+      '            "subtotal_iva": 0,\n' +
+      '            "card_country": "Colombia",\n' +
+      '            "processor_name": "Kushki Acquirer Processor",\n' +
+      '            "response_text": "Transacción rechazada.",\n' +
+      '            "transaction_reference": "15f60a3c-5b39-48cc-8a3f-ee19266fe4f1",\n' +
+      '            "transaction_id": "1686326360728573892",\n' +
+      '            "tokenObject": {\n' +
+      '                "tokenStatus": "PR*****D",\n' +
+      '                "bin": "491626",\n' +
+      '                "processingCode": "57e96805-7852-4b60-a94f-e67c5c9836eb",\n' +
+      '                "expiryYear": "XX",\n' +
+      '                "maskedCardNumber": "491626XXXXXX4975",\n' +
+      '                "binInfo": {\n' +
+      '                    "bank": "RAPPIPAY",\n' +
+      '                    "binType": 6,\n' +
+      '                    "bin": "491626",\n' +
+      '                    "originalBinFullLength": "491626",\n' +
+      '                    "brand": "Visa",\n' +
+      '                    "processor": "NA",\n' +
+      '                    "info": {\n' +
+      '                        "country": {\n' +
+      '                            "alpha2": "CO",\n' +
+      '                            "name": "Colombia",\n' +
+      '                            "numeric": "170"\n' +
+      '                        },\n' +
+      '                        "scheme": "visa",\n' +
+      '                        "type": "credit"\n' +
+      '                    }\n' +
+      '                },\n' +
+      '                "merchantId": "20000000103151137000",\n' +
+      '                "currency": "PEN",\n' +
+      '                "id": "bf9d2fbcd69a4349bd44980192df25ab",\n' +
+      '                "isBlockedCard": false,\n' +
+      '                "amount": 20,\n' +
+      '                "cardHolderName": "TESTING",\n' +
+      '                "transactionReference": "15f60a3c-5b39-48cc-8a3f-ee19266fe4f1",\n' +
+      '                "created": 1686326317579,\n' +
+      '                "ip": "191.107.232.130",\n' +
+      '                "expiryMonth": "XX",\n' +
+      '                "userAgent": "PostmanRuntime/7.32.2",\n' +
+      '                "lastFourDigits": "4975",\n' +
+      '                "expirationTime": 1702137517,\n' +
+      '                "sendCvv": true,\n' +
+      '                "isDeferred": false,\n' +
+      '                "tokenType": "tr*****n",\n' +
+      '                "config": {\n' +
+      '                    "region": "us-east-1"\n' +
+      '                }\n' +
+      '            },\n' +
+      '            "created": 1686326360000,\n' +
+      '            "ip": "191.107.232.130",\n' +
+      '            "iva_value": 0,\n' +
+      '            "merchant_name": "FANATIZ PERU",\n' +
+      '            "transaction_type": "SALE",\n' +
+      '            "sync_mode": "online",\n' +
+      '            "isPreauth": false,\n' +
+      '            "bin_type": 6,\n' +
+      '            "secure_reason_code": "K322",\n' +
+      '            "transactionCardHolderName": "TESTING",\n' +
+      '            "subtotal_iva0": 20,\n' +
+      '            "processor_type": "aggregator_formal",\n' +
+      '            "response_code": "K322",\n' +
+      '            "transaction_status": "DECLINED",\n' +
+      '            "card_holder_name": "TESTING",\n' +
+      '            "payment_brand": "Visa",\n' +
+      '            "acquirer_bank": "Kushki Peru",\n' +
+      '            "request_amount": 20,\n' +
+      '            "canIgnoreWarnings": false,\n' +
+      '            "fullResponse": true,\n' +
+      '            "merchant_id": "20000000103151137000",\n' +
+      '            "approved_transaction_amount": 0,\n' +
+      '            "token_type": "tr*****n",\n' +
+      '            "maskedCardNumber": "491626XXXXXX4975",\n' +
+      '            "currency_code": "PEN",\n' +
+      '            "security": {\n' +
+      '                "message": "strict"\n' +
+      '            },\n' +
+      '            "issuing_bank": "RAPPIPAY",\n' +
+      '            "processor_id": "6000000000168503827655242279",\n' +
+      '            "foreign_card": true,\n' +
+      '            "last_four_digits": "4975",\n' +
+      '            "isBlockedCard": false,\n' +
+      '            "amount": {\n' +
+      '                "subtotalIva0": 20,\n' +
+      '                "iva": 0,\n' +
+      '                "subtotalIva": 0,\n' +
+      '                "ice": 0,\n' +
+      '                "currency": "PEN"\n' +
+      '            },\n' +
+      '            "plcc": false,\n' +
+      '            "prepaid": false,\n' +
+      '            "original_bin": "491626",\n' +
+      '            "secure_code": "K322",\n' +
+      '            "card_type": "credit",\n' +
+      '            "baseMessage": "strict",\n' +
+      '            "token": "bf9d2fbcd69a4349bd44980192df25ab",\n' +
+      '            "card_country_code": "CO",\n' +
+      '            "credential_alias": "FANATIZ PERU",\n' +
+      '            "send_cvv": true,\n' +
+      '            "bin_card": "491626",\n' +
+      '            "ice_value": 0,\n' +
+      '            "tokenAlreadyUsed": false,\n' +
+      '            "config": {\n' +
+      '                "region": "us-east-1"\n' +
+      '            },\n' +
+      '            "transactionReference": "15f60a3c-5b39-48cc-8a3f-ee19266fe4f1"\n' +
+      '        }'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 4767,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'bm5ydtq6b1.execute-api.us-east-1.amazonaws.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'bm5ydtq6b1.execute-api.us-east-1.amazonaws.com',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 24,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 60,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /production HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/x-www-form-urlencoded\r\n' +
+      'X-Kushki-Id: 1686326662741\r\n' +
+      'X-Kushki-Key: 20000000103151137000\r\n' +
+      'X-Kushki-Signature: 152e4fb5f11c4825ff56fe94308220af905e781bc5e2545e2a4e3f0e6144a5b6\r\n' +
+      'X-Kushki-SimpleSignature: 4bde549aae47ba94af3290649e41de901447f2d85d8b1664184c2360e999d379\r\n' +
+      'X-App-Id: 63bf35e90d09d9001eb6633c\r\n' +
+      'User-Agent: axios/0.27.2\r\n' +
+      'Content-Length: 4767\r\n' +
+      'Host: bm5ydtq6b1.execute-api.us-east-1.amazonaws.com\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/production',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://bm5ydtq6b1.execute-api.us-east-1.amazonaws.com/production',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 22,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'bm5ydtq6b1.execute-api.us-east-1.amazonaws.com',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 4767,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://bm5ydtq6b1.execute-api.us-east-1.amazonaws.com/production',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'x-kushki-id': [Array],
+      'x-kushki-key': [Array],
+      'x-kushki-signature': [Array],
+      'x-kushki-simplesignature': [Array],
+      'x-app-id': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  data: { knowledge: true }
+}
